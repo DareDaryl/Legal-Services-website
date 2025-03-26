@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle Dempsey Inspired Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Michelle Dempsey's World</h1>
+            <p>Your journey to personal growth starts here.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a> <!-- Link to Contact Form -->
+        </div>
+    </section>
+    
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <img src="./rainy.jpg" alt="Michelle Dempsey" class="profile-img">
+                <div>
+                    <h2>About Michelle</h2>
+                    <p>Michelle Dempsey is an expert in personal growth, providing insightful coaching and guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-items">
+                <div class="service-item">
+                    <h3>Coaching</h3>
+                    <p>Personal coaching sessions to help you achieve your goals.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Workshops</h3>
+                    <p>Interactive workshops on self-development and leadership.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Consulting</h3>
+                    <p>Consulting services for businesses looking to improve their organizational culture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Clients Say</h2>
+            <div class="testimonial-item">
+                <p>"Michelle helped me clarify my career goals and gave me the tools to succeed!"</p>
+                <span>- Client Name</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"The workshop was incredibly insightful, and I learned so much about leadership!"</p>
+                <span>- Client Name</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Michelle Dempsey. All Rights Reserved.</p>
+            <div class="socials">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <script>
+            window.addEventListener('scroll', function () {
+                var offset = window.scrollY;
+                document.querySelector('.hero').style.backgroundPosition = 'center ' + offset * 0.5 + 'px';
+            });
+        </script>
+        
+    </footer>
+</body>
+</html>
