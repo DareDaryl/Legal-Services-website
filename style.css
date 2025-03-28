@@ -48,23 +48,64 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('hero-bg.jpg');
+    background-image: url('./rainy.jpg'); /* Assuming you want this as your background */
     background-size: cover;
     background-position: center;
-    padding: 80px 0;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff; /* White text */
+    padding: 0 20px;
+    font-family: 'Merriweather', serif; /* Legal font */
+    font-size: 5px; /* Or even 12px if you want it smaller */
+    font-weight: 700; /* Keep it bold */
     text-align: center;
-    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Optional */
+    letter-spacing: 2px; /* Optional */
+    
 }
 
+.hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Merriweather', serif; /* Apply Merriweather font */
+    font-size: 2rem;
+    text-align: center;
+}
+/* Not used 
 .hero h1 {
-    font-size: 48px;
+    font-size: 3rem;
+    margin-bottom: 15px;
+} */
+.hero-content h1 {
+    font-family: 'Merriweather', serif; /* Legal font */
+    font-size: 2.5rem; /* Or even 12px if you want it smaller */
+    font-weight: 700; /* Keep it bold */
+    text-align: center;
     margin-bottom: 20px;
+    text-transform: uppercase; /* Optional */
+    letter-spacing: 2px; /* Optional */
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.cta-button {
+    font-size: 1.2rem;
+    background-color: #f26b38; /* Call to action button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
+
+.cta-button:hover {
+    background-color: #f14f28; /* Button hover effect */
+}
+
 
 .cta-button {
     background-color: #f39c12;
@@ -86,12 +127,14 @@ nav ul li a {
     align-items: center;
     gap: 20px;
 }
-
 .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 100%; /* Make it responsive */
+    max-width: 400px; /* Set a maximum width (adjust as needed) */
+    height: auto; /* Keep the aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    border-radius: 50%; /* Optional: if you want it circular */
 }
+
 
 .about h2 {
     font-size: 32px;
@@ -100,14 +143,16 @@ nav ul li a {
 
 /* Services Section */
 .services {
-    background-color: #fafafa;
-    padding: 60px 0;
-    text-align: center;
+    background-color: #f4f4f4; /* Light background for readability */
+    padding: 50px 0;
+    color: #333;
 }
 
 .services h2 {
-    font-size: 36px;
+    text-align: center;
+    font-size: 2.5rem;
     margin-bottom: 40px;
+    color: #333; /* Dark color for the heading */
 }
 
 .service-items {
@@ -117,20 +162,25 @@ nav ul li a {
 }
 
 .service-item {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
     width: 30%;
-    border-radius: 5px;
 }
 
 .service-item h3 {
-    font-size: 24px;
+    font-size: 1.8rem;
     margin-bottom: 10px;
+    color: #f26b38; /* Highlighted color */
 }
 
 .service-item p {
-    font-size: 16px;
+    font-size: 1rem;
+    color: #666;
 }
+
 
 /* Testimonials Section */
 .testimonials {
@@ -155,7 +205,7 @@ nav ul li a {
 }
 /* Parallax Effect */
 .hero {
-    background-image: url('./rainy.jpg'); /* Your background image */
+    background-image: url('./courtroom1.jpg'); /* Your background image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* This is the key for the parallax effect */
@@ -170,9 +220,33 @@ nav ul li a {
     z-index: 2; /* Ensure content stays above the background */
     text-align: center;
 }
+/*If I want to blur parallax, use below
+.hero {
+    background-image: url('./courtroom1.jpg'); /
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
 
+.hero::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; 
+    background-size: inherit;
+    background-position: inherit;
+    background-attachment: inherit;
+    filter: blur(5px); /* Apply the blur effect 
+    z-index: -1; 
+}*/
 .hero h1 {
-    font-size: 48px;
+    font-size: 35px;
     margin-bottom: 20px;
 }
 
@@ -191,7 +265,7 @@ nav ul li a {
 }
 /* Parallax Effect for Services Section */
 .services {
-    background-image: url('./rainy.jpg'); /* Replace with your background image */
+    background-image: url('./courtroom2.jpg'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Parallax effect */
