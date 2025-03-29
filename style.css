@@ -205,7 +205,7 @@ nav ul li a {
 }
 /* Parallax Effect */
 .hero {
-    background-image: url('./courtroom1.jpg'); /* Your background image */
+    background-image: url('./assets/courtroom1.jpg'); /* Your background image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* This is the key for the parallax effect */
@@ -265,7 +265,7 @@ nav ul li a {
 }
 /* Parallax Effect for Services Section */
 .services {
-    background-image: url('./courtroom2.jpg'); /* Replace with your background image */
+    background-image: url('./assets/courtroom2.jpg'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Parallax effect */
